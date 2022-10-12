@@ -1,0 +1,83 @@
+* {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  background: #ecebf2;
+}
+
+.input {
+  text-align: center;
+  margin: 100px auto;
+}
+
+input[type="submit"] {
+  /*
+   box-shadow: -3px -3px 5px #fafafa, 2px 2px 5px #aeaec0;
+   */
+  width: 20%;
+  padding: 15px 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.input input[type="text"] {
+  width: 60%;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.close {
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.card * {
+  width: 40%;
+  margin-left: 29%;
+  margin-top: 20px;
+  padding: 1%;
+  border-radius: 10px;
+}
+.card .name {
+  font-size: 1rem;
+}
+
+.card .weathericon {
+}
+
+.card .temp {
+  font-size: 4rem;
+}
+
+.card .state {
+  font-size: 1rem;
+}
+
+.card .wind {
+  font-size: 1rem;
+}
