@@ -25,7 +25,7 @@ button.addEventListener("click", function (name) {
       main.innerHTML = nameValue;
       state.innerHTML = descValue;
       temp.innerHTML = Math.round(tempValue) + "°";
-      wind.innerHTML = "Wind: " + windValue + "m/s";
+      wind.innerHTML = windValue + "m/s";
       image.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       input.value = "";
     })

@@ -64,6 +64,9 @@ input[type="submit"] {
 .weather-card {
   margin-left: 70px;
   margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .weather-card #name {
@@ -80,15 +83,21 @@ input[type="submit"] {
   font-size: 1rem;
 }
 
-.weather-card .wind {
-  margin-top: 5px;
+.Wind-Wrapper {
+  margin-top: 10px;
+
   font-size: 0.8rem;
+  display: flex;
+}
+
+.Wind-Wrapper svg {
+  margin-right: 5px;
 }
 
 .Image-Wrapper {
 }
 
 .Image {
-  filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+  filter: drop-shadow(0px 0px 10px #b6b6b6);
   min-width: 120px;
 }
