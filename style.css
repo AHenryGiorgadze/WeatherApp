@@ -1,5 +1,7 @@
 * {
+  text-align: center;
   font-weight: bold;
+  color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +11,9 @@
 body {
   width: 100%;
   font-family: "Nunito", sans-serif;
-  background: #ecebf2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input {
@@ -18,26 +22,26 @@ body {
 }
 
 input[type="submit"] {
-  /*
-   box-shadow: -3px -3px 5px #fafafa, 2px 2px 5px #aeaec0;
-   */
-  width: 20%;
+  box-shadow: -2px -2px 5px #fafafa, 2px 2px 5px #aeaec0;
+  min-width: 100px;
   padding: 15px 30px;
   background-color: transparent;
   border: none;
-  border-radius: 1px;
+  border-radius: 5px;
+  margin-left: 10px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 
 .input input[type="text"] {
-  width: 60%;
+  box-shadow: inset 1px 1px 10px #aeaec0, -3px -3px 5px #fafafa;
+
   height: 55px;
   padding: 5px 10px;
-  background: #e7e7e7;
+  background: #eeeeee;
   border: none;
-  border-radius: 1px;
+  border-radius: 5px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -50,34 +54,41 @@ input[type="submit"] {
   margin-right: 20px;
 }
 
-.card {
-  width: 100%;
-  border-radius: 2px;
-  text-align: center;
+.container {
+  box-shadow: -5px -5px 20px #fafafa, 5px 5px 20px #aeaec0;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
 }
 
-.card * {
-  width: 40%;
-  margin-left: 29%;
-  margin-top: 20px;
-  padding: 1%;
-  border-radius: 10px;
+.weather-card {
+  margin-left: 70px;
+  margin-right: 50px;
 }
-.card .name {
+
+.weather-card #name {
+  font-size: 1.5rem;
+}
+
+.weather-card .temp {
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
+
+.weather-card .state {
+  margin-top: 10px;
   font-size: 1rem;
 }
 
-.card .weathericon {
+.weather-card .wind {
+  margin-top: 5px;
+  font-size: 0.8rem;
 }
 
-.card .temp {
-  font-size: 4rem;
+.Image-Wrapper {
 }
 
-.card .state {
-  font-size: 1rem;
-}
-
-.card .wind {
-  font-size: 1rem;
+.Image {
+  filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+  min-width: 120px;
 }

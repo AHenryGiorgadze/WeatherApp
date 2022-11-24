@@ -4,6 +4,7 @@ var temp = document.querySelector(".temp");
 var state = document.querySelector(".state");
 var button = document.querySelector(".submit");
 var wind = document.querySelector(".wind");
+var image = document.querySelector(".Image");
 
 button.addEventListener("click", function (name) {
   name = input.value;
@@ -17,13 +18,15 @@ button.addEventListener("click", function (name) {
       console.log(data);
       var tempValue = data["main"]["temp"];
       var nameValue = data["name"];
+      const { icon, description } = data.weather[0];
       var descValue = data["weather"][0]["description"];
       var windValue = data["wind"]["speed"];
 
       main.innerHTML = nameValue;
       state.innerHTML = descValue;
-      temp.innerHTML = Math.round(tempValue);
-      wind.innerHTML = windValue + "m/s";
+      temp.innerHTML = Math.round(tempValue) + "°";
+      wind.innerHTML = "Wind: " + windValue + "m/s";
+      image.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       input.value = "";
     })
 
@@ -31,3 +34,7 @@ button.addEventListener("click", function (name) {
       console.log("Error : " + err);
     });
 });
+
+/*
+kutaisi
+*/
